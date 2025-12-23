@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Privacy Policy | JPClicks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="favicon.ico">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+    }
+
+    /* PAGE WRAPPER */
+    .page-wrapper {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* HEADER */
+    .brand {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    .brand h1 {
+      font-size: 2.8rem;
+    }
+
+    /* GLASS CARD */
+    .policy-card {
+      flex: 1;
+      max-width: 950px;
+      margin: 30px auto;
+      padding: 50px;
+      border-radius: 25px;
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(20px);
+      box-shadow: 0 30px 80px rgba(0,0,0,0.45);
+    }
+
+    .policy-card h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    .policy-card section {
+      margin-bottom: 30px;
+    }
+
+    .policy-card h3 {
+      color: #00c6ff;
+      margin-bottom: 10px;
+    }
+
+    .policy-card p,
+    .policy-card li {
+      line-height: 1.7;
+      opacity: 0.9;
+    }
+
+    .policy-card ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .policy-card ul li::before {
+      content: "✔";
+      color: #00c6ff;
+      margin-right: 8px;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 36px;
+      border-radius: 40px;
+      background: linear-gradient(to right, #0072ff, #00c6ff);
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+
+    .back-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+    }
+
+    /* FOOTER — SAME AS OFFERS */
+    footer {
+      background: #0f2027;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    footer a {
+      color: #00c6ff;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    footer p {
+      margin: 8px 0;
+      font-size: 12px;
+      opacity: 0.8;
+    }
+
+    /* MOBILE */
+    @media (max-width: 900px) {
+      .policy-card {
+        padding: 30px 20px;
+        margin: 20px;
+      }
+
+      .policy-card h2 {
+        font-size: 2rem;
+      }
+
+      .brand h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page-wrapper">
+
+    <!-- HEADER -->
+    <div class="brand">
+      <h1>JPClicks</h1>
+    </div>
+
+    <!-- CONTENT -->
+    <main class="policy-card">
+
+      <h2>Privacy Policy</h2>
+
+      <section>
+        <h3>Information We Collect</h3>
+        <p>
+          We may collect non-personal information such as browser type,
+          device information, IP address, pages visited, and referring URLs.
+          Personal information is collected only when voluntarily provided.
+        </p>
+        <p>
+          We do not sell, rent, or share your personal data with unauthorized
+          third parties.
+        </p>
+      </section>
+
+      <section>
+        <h3>How We Use Your Information</h3>
+        <ul>
+          <li>Improve website performance and experience</li>
+          <li>Analyze traffic and usage patterns</li>
+          <li>Display relevant affiliate and CPA offers</li>
+          <li>Prevent fraud and abuse</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Cookies & Tracking</h3>
+        <p>
+          We use cookies and similar technologies to understand visitor behavior.
+          You may disable cookies via your browser settings.
+        </p>
+      </section>
+
+      <section>
+        <h3>Third-Party Services</h3>
+        <p>
+          We may work with third-party analytics tools and affiliate networks.
+          These services follow their own privacy policies.
+        </p>
+      </section>
+
+      <section>
+        <h3>Affiliate Disclosure</h3>
+        <p>
+          Some links on this site are affiliate or CPA links.
+          We may earn a commission at no extra cost to you.
+        </p>
+      </section>
+
+      <section>
+        <h3>Children’s Information</h3>
+        <p>
+          This website is not intended for children under the age of 13.
+        </p>
+      </section>
+
+      <section>
+        <h3>Consent</h3>
+        <p>
+          By using our website, you consent to this Privacy Policy.
+        </p>
+      </section>
+
+      <section>
+        <h3>Contact</h3>
+        <p>
+          Email: <strong>info.jpclicks@gmail.com</strong>
+        </p>
+      </section>
+
+      <a href="index.html" class="back-btn">← Back to Home</a>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div>© <span id="year"></span> JPClicks. All rights reserved.</div>
+
+      <p>
+        Affiliate disclosure: We may earn commissions when you take action through our links.
+      </p>
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us | JPClicks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+    }
+
+    .page-wrapper {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand {
+      text-align: center;
+      padding: 40px 20px 10px;
+    }
+
+    .brand h1 {
+      font-size: 2.8rem;
+    }
+
+    .card {
+      flex: 1;
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 45px;
+      border-radius: 25px;
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(20px);
+      box-shadow: 0 30px 80px rgba(0,0,0,0.45);
+    }
+
+    .card h2 {
+      font-size: 2.4rem;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .card p {
+      text-align: center;
+      font-size: 1.05rem;
+      opacity: 0.9;
+      margin-bottom: 35px;
+    }
+
+    .back-btn {
+  display: inline-block;
+  margin: 30px auto 0;
+  padding: 14px 36px;
+  border-radius: 40px;
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.back-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+/* NAVBAR */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(15, 32, 39, 0.65);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.nav-inner {
+  max-width: 1150px;
+  margin: auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-brand a {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-links a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.95rem;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+}
+
+/* MOBILE NAV */
+@media (max-width: 768px) {
+  .nav-links a {
+    margin-left: 15px;
+    font-size: 0.9rem;
+  }
+}
+
+    /* FORM */
+    form {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      font-size: 1rem;
+    }
+
+    form button {
+      width: 100%;
+      padding: 14px;
+      border-radius: 30px;
+      border: none;
+      background: linear-gradient(to right, #0072ff, #00c6ff);
+      color: #fff;
+      font-size: 1.05rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      opacity: 0.9;
+    }
+
+    .contact-info {
+      margin-top: 35px;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    .contact-info strong {
+      color: #00c6ff;
+    }
+
+    footer {
+      background: #0f2027;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #00c6ff;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    footer p {
+      margin-top: 8px;
+      font-size: 12px;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        padding: 30px 20px;
+        margin: 15px;
+      }
+
+      .brand h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+  <div class="nav-inner">
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="disclaimer.html">Disclaimer</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page-wrapper">
+
+  <div class="brand">
+    <h1>JPClicks</h1>
+  </div>
+
+  <main class="card">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or business inquiries, feel free to reach out.</p>
+
+    <!-- CONTACT FORM -->
+    <form action="https://formsubmit.co/info.jpclicks@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="New Contact Message">
+
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="subject" placeholder="Subject" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      📧 Email: <strong>info.jpclicks@gmail.com</strong>
+    </div>
+<p></p>
+
+     <a href="index.html" class="back-btn">← Back to Home</a>
+  </main>
+  
+
+  <footer>
+    <div>© <span id="year"></span> JPClicks. All rights reserved.</div>
+    <div>
+      <a href="privacy-policy.html">Privacy Policy</a> 
+
+    </div>
+    <p>Affiliate disclosure: We may earn commissions from partner links.</p>
+  </footer>
+
+</div>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

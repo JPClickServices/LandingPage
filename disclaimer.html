@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Disclaimer | JPClicks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+    }
+
+    .page-wrapper {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    .brand h1 {
+      font-size: 2.8rem;
+    }
+
+    .card {
+      flex: 1;
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 45px;
+      border-radius: 25px;
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(20px);
+      box-shadow: 0 30px 80px rgba(0,0,0,0.45);
+    }
+
+    .card h2 {
+      font-size: 2.4rem;
+      margin-bottom: 25px;
+    }
+
+    .card p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      opacity: 0.9;
+      margin-bottom: 18px;
+    }
+
+/* NAVBAR */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(15, 32, 39, 0.65);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.nav-inner {
+  max-width: 1150px;
+  margin: auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-brand a {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-links a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.95rem;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+}
+
+/* MOBILE NAV */
+@media (max-width: 768px) {
+  .nav-links a {
+    margin-left: 15px;
+    font-size: 0.9rem;
+  }
+}
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 36px;
+      border-radius: 40px;
+      background: linear-gradient(to right, #0072ff, #00c6ff);
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #0f2027;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #00c6ff;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    footer p {
+      margin-top: 8px;
+      font-size: 12px;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        margin: 20px;
+        padding: 30px 20px;
+      }
+
+      .brand h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+  <div class="nav-inner">
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a> 
+    </div>
+  </div>
+</nav>
+
+<div class="page-wrapper">
+
+  <div class="brand">
+    <h1>JPClicks</h1>
+  </div>
+
+  <main class="card">
+    <h2>Disclaimer</h2>
+
+    <p>
+      JPClicks is not a financial institution, lender, or investment advisor.
+      We do not provide financial, legal, or investment advice.
+    </p>
+
+    <p>
+      All information provided on this website is for general informational
+      purposes only and should not be considered professional advice.
+    </p>
+
+    <p>
+      Any financial decisions you make are solely your responsibility.
+      You should conduct your own research before engaging with any offer.
+    </p>
+
+    <p>
+      JPClicks may contain affiliate or CPA links.
+      We may earn a commission when users take action through these links,
+      at no additional cost to the user.
+    </p>
+
+    <p>
+      We are not responsible for the content, policies, or practices of
+      third-party websites.
+    </p>
+
+    <a href="index.html" class="back-btn">← Back to Home</a>
+  </main>
+
+  <footer>
+    <div>© <span id="year"></span> JPClicks. All rights reserved.</div>
+    <div>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </div>
+    <p>Affiliate disclosure: We may earn commissions from partner links.</p>
+  </footer>
+
+</div>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
